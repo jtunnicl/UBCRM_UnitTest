@@ -9,8 +9,10 @@ using namespace std;
 
 UBCRM_Engine::UBCRM_Engine()
 {
-    initEngine();
-    Q =
+    //initEngine();
+    Q = 250;
+    S = 0.010;
+    D50 = 0.045;
 }
 
 

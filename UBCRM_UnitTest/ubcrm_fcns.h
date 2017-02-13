@@ -3,6 +3,7 @@
 
 #include "ubcrmwindow.h"
 #include <vector>
+
 using namespace std;
 
 double gammln2(double xx);
@@ -81,6 +82,6 @@ public:
     UBCRM_Fcns();                            // Constructor
 
     void initData();
-}
+};
 
 #endif // UBCRM_H_H

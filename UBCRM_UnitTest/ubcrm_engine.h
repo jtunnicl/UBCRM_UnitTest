@@ -12,18 +12,18 @@ public:
 
     double Q;           // Discharge
     double S;           // Slope
-    double D50;         // D50
+    double D50;         // D50 in m
 
     UBCRM_Engine();                            // Constructor
 
-    void initEngine();
+    //void initEngine();
 
     void regimeModel(NodeCHObject *ch);               // Compute Millar-Eaton equilibrium channel width
 
     void findStable();
 
     void setRegimeWidth();
-}
+};
 
 
 
