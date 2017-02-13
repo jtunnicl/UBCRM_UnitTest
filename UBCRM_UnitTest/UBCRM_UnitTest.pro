@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += charts
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,8 +14,12 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        ubcrmwindow.cpp
+        ubcrmwindow.cpp \
+    ubcrm_fcns.cpp \
+    ubcrm_engine.cpp
 
-HEADERS  += ubcrmwindow.h
+HEADERS  += ubcrmwindow.h \
+    ubcrm_fcns.h \
+    ubcrm_engine.h
 
 FORMS    += ubcrmwindow.ui

@@ -3,10 +3,31 @@
 
 UBCRMWindow::UBCRMWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::UBCRMWindow)
+    ui(new Ui::UBCRMWindow),
+    ch(new NodeCHObject)
 {
     ui->setupUi(this);
+    setupChart();
+    setWindowTitle("UBCRM Regime Solver");
+
 }
+
+
+
+void UBCRMWindow::setupChart()
+{
+
+}
+
+
+void UBCRMWindow::regimeCalc()
+{
+
+    setRegimeWidth(ch)
+}
+
+
+
 
 UBCRMWindow::~UBCRMWindow()
 {
