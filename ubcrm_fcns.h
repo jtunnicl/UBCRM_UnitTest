@@ -1,8 +1,8 @@
 #ifndef UBCRM_FCNS_H
 #define UBCRM_FCNS_H
 
-#include "ubcrmwindow.h"
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -67,21 +67,6 @@ public:
                                                // Work out bankfull depth (bankHeight) for a given discharge.
     void chComputeStress(NodeGSDObject f, double Slope);
                                                // Compute stress on banks
-};
-
-
-class UBCRM_Fcns
-{
-
-public:
-
-    double Q;           // Discharge
-    double S;           // Slope
-    double D50;         // D50
-
-    UBCRM_Fcns();                            // Constructor
-
-    void initData();
 };
 
 #endif // UBCRM_H_H

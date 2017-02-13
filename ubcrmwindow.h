@@ -1,6 +1,7 @@
 #ifndef UBCRMWINDOW_H
 #define UBCRMWINDOW_H
 
+#include <QDir>
 #include <QMainWindow>
 #include <QtCore>
 #include <QWidget>
@@ -18,7 +19,7 @@
 #include <cmath>
 
 #include "ubcrm_fcns.h"
-#include "ubcrm_engine.h"
+//#include "ubcrm_engine.h"
 
 
 namespace Ui {
@@ -35,6 +36,8 @@ public:
     ~UBCRMWindow();
 
     void setupChart();
+
+    void regimeCalc();
 
 private:
     Ui::UBCRMWindow *ui;

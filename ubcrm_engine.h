@@ -3,7 +3,7 @@
 
 #include "ubcrmwindow.h"
 #include "ubcrm_fcns.h"
-
+#include <vector>
 
 class UBCRM_Engine
 {
@@ -13,6 +13,7 @@ public:
     double Q;           // Discharge
     double S;           // Slope
     double D50;         // D50 in m
+    NodeCHObject ch;
 
     UBCRM_Engine();                            // Constructor
 
@@ -22,7 +23,6 @@ public:
 
     void findStable();
 
-    void setRegimeWidth();
 };
 
 

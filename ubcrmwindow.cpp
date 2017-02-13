@@ -1,5 +1,6 @@
 #include "ubcrmwindow.h"
 #include "ui_ubcrmwindow.h"
+#include "ubcrm_engine.h"
 
 UBCRMWindow::UBCRMWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -9,7 +10,6 @@ UBCRMWindow::UBCRMWindow(QWidget *parent) :
     ui->setupUi(this);
     setupChart();
     setWindowTitle("UBCRM Regime Solver");
-
 }
 
 
@@ -23,9 +23,7 @@ void UBCRMWindow::setupChart()
 void UBCRMWindow::regimeCalc()
 {
 
-    setRegimeWidth(ch)
 }
-
 
 
 

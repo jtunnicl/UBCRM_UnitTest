@@ -46,11 +46,11 @@ NodeGSDObject::NodeGSDObject()
 
 void NodeGSDObject::norm_frac()
 {
-    float ngsz, nlith, cumtot;
+    double ngsz, nlith, cumtot;
     vector<float> ktot;
     ktot.resize(psi.size());
 
-    ngsz = psi.size() - 2;
+    ngsz = psi.size() - 2.;
     nlith = abrasion.size();
 
     sand_pct = 0;
@@ -121,7 +121,7 @@ void NodeGSDObject::dg_and_std()
 
 NodeCHObject::NodeCHObject()
 {
-    QProp = 0.;                             // Proportion of total flow directed to this channel
+    QProp = 0.;                                // Proportion of total flow directed to this channel
     depth = 1.;                                // Given the proportion of flow in the channel, this is the computed depth - modified later in xsGeom()
     width = 0.;
     bankHeight = 3.;                           // Measured relative to channel bottom
@@ -263,7 +263,3 @@ void NodeCHObject::chComputeStress(NodeGSDObject f, double Slope)       // Compu
 
 }
 
-UBCRM_Fcns::UBCRM_Fcns()
-{
-
-}
